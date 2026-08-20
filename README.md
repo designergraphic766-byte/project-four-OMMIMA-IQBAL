@@ -26,6 +26,6 @@ Vanilla JavaScript (ES6+) (Event interception, regular expression testing, and p
 Clone this repository or download the ZIP file.
 
 👤 Internship Details
-Intern Name: OMMIMA IQBAL
 
+Intern Name: OMMIMA IQBAL
 Batch: DecodeLabs Frontend Development Internship
