@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Form Validation Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>🛡️ Secure Registration Form</h2>
+        <p class="subtitle">Architecting trust through intelligent validation.</p>
+
+        <!-- HTML Input Form -->
+        <form id="registrationForm" novalidate>
+            
+            <!-- Name Field -->
+            <div class="input-group">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" required placeholder="Enter your name">
+                <span id="username-error" class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="name@example.com">
+                <span id="email-error" class="error-msg" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Password Field with Strict Policy Integration -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="Create a strong password">
+                <span id="password-error" class="error-msg" role="alert" aria-live="polite"></span>
+                <small class="policy-hint">Must contain 8+ chars, uppercase, lowercase, number, and symbol.</small>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn">Submit Payload</button>
+        </form>
+
+        <!-- Success Output Box -->
+        <div id="successPayload" class="success-box hidden">
+            <h3>📦 Packaged JSON Payload</h3>
+            <pre id="jsonOutput"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

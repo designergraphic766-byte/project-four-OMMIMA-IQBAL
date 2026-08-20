@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h2 {
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    padding: 10px 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* Dynamic State Classes handled via JS */
+input.invalid {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+input.valid {
+    border-color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+.error-msg {
+    font-size: 0.75rem;
+    color: #ef4444;
+    margin-top: 4px;
+    min-height: 14px;
+}
+
+.policy-hint {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1e293b;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-box {
+    margin-top: 20px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.success-box h3 {
+    font-size: 0.9rem;
+    color: #166534;
+    margin-bottom: 8px;
+}
+
+pre {
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+}
